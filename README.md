@@ -17,7 +17,7 @@ At first I searched the paper of AlexNext, VGG, and GoogLeNet. I discarded the 1
 
 However, it ended up classifying all the input image as human because transfered VGG-16 model didn't modifyor retrain for this task, it's parameter configuration is still 1000 outputs (ImageNet label). In the future, we can apply transfer learning ,and retrain with both human and dog images. Also, its final layer should be 2 neuron only (human and dog). Thus, we can increase the accuracy of classifying human and dog in the beginning.
 
-## Lesson Learned
+## Lesson Learned for Future Improvements
 
 1. F1 score and confusion matrix can be used to evaule the performance of the dog and human detector.
 2. For my home-made CNN model, we can train more epochs to further decrease the loss. (as my observation, the validation still has some room the drop)
